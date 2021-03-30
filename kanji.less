@@ -1,0 +1,51 @@
+#pageContainer {
+    display: grid;
+    grid-template-columns: 800px auto;
+    width: 1000px;
+}
+
+.kanjiContainer {
+    display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+}
+
+.kanji {
+    font-size: 40px;
+    border: 2px solid black;
+    margin: 2px;
+    transition: 0.2s;
+    background-color: white;
+    cursor: pointer;
+    &:hover {
+        background-color: #f8a3a3;
+    }
+}
+
+
+#vocabContainer {
+    height: 100px;
+    #stickyVocab {
+        position: sticky;
+        top: 0px;
+        height: 500px;
+        overflow: auto;
+    }
+}
+
+.vocab {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.vocabKanji {
+    width: 150px;
+}
+
+.vocabKana {
+    width: 150px;
+}
+
+.vocabEnglish {
+    width: 450px;
+}
